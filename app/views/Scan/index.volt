@@ -7,9 +7,23 @@
 		</ul>
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="Home">
-				<!--
-				//TODO 4.3 implémenter à partir de DisqueController/indexAction
-				-->
+				<div>Caractéristiquers du disque</div>
+				<div>
+					<label>Nom :</label>
+					<span id="nomDisque"></span>
+					<button>Modifier</button>
+				</div>
+				<div>
+					<label>Propriétaire :</label>
+					<span id="login"></span>
+					<span id="nomProprio"></span>
+				</div>
+				<div>
+					<label>Occupation</label>
+					<label id="occupation"></label> Mo (
+					<label id="pourcentOccup"></label>%) sur
+					<label id="quota"></label> Mo
+				</div>
 			</div>
 			<div role="tabpanel" class="tab-pane" id="Listing">
 				<div class="btn-toolbar">

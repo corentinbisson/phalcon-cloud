@@ -7,8 +7,13 @@ class ScanController extends ControllerBase {
 	 * @param int $idDisque id du disque à afficher
 	 */
 	public function indexAction($idDisque) {
-		//TODO 4.3
-		$diskName="nom du disque.......................";
+		$user = Auth::getUser($this);
+		$jquery = $this->jquery;
+		$disque = Disque::findFirst();
+		$nomDisque = $disque->getNom();
+		$diskName="$nomDisque";
+		$jquery->html("#nomDisque","#nomDisque.text($('nomDisque'));");
+		$jquery->html("#login\",\"#nomDisque.text($('user')->getLogin());");
 
 
 		$this->jquery->execOn("click", "#ckSelectAll", "$('.toDelete').prop('checked', $(this).prop('checked'));$('#btDelete').toggle($('.toDelete:checked').length>0)");

@@ -21,6 +21,5 @@ return new \Phalcon\Config(array(
         'cacheDir'       => APP_PATH . '/app/cache/',
         'baseUri'        => '/phalcon-cloud/',
     ),
-	'cloud'=>array('root'=>'files/',
-					'prefix'=>'srv-')
+	'cloud'=>array('root'=>'files/','prefix'=>'srv-')
 ));

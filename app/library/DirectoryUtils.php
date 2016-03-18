@@ -63,6 +63,8 @@ class DirectoryUtils {
 		return $size;
 	}
 
+
+
 	/**
 	 * Met à jour l'historique du jour de $disque et retourne l'instance d'Historique correspondant
 	 * @param String $cloud accès par $this->config->cloud dans un contrôleur
